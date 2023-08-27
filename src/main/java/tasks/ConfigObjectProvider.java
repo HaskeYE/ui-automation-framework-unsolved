@@ -1,5 +1,7 @@
-package configInterface;
+package tasks;
 
+import configInterface.EnvironmentConfiguration;
+import configInterface.RunConfiguration;
 import lombok.Getter;
 import org.aeonbits.owner.ConfigFactory;
 

@@ -1,4 +1,4 @@
-import configInterface.ConfigObjectProvider;
+import tasks.ConfigObjectProvider;
 import configInterface.EnvironmentConfiguration;
 import configInterface.RunConfiguration;
 import org.aeonbits.owner.ConfigFactory;
