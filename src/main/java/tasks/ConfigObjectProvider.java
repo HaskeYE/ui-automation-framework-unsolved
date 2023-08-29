@@ -8,14 +8,15 @@ import org.aeonbits.owner.ConfigFactory;
 @Getter
 public class ConfigObjectProvider {
 
-    private String browser;
-    private int browserWidth;
-    private int browserHeight;
-    private String seleniumVer;
-    private int timeout;
-    private String email;
-    private String password;
-    private String homepageUrl;
+    private final String browser;
+    private final int browserWidth;
+    private final int browserHeight;
+    private final String seleniumVer;
+    private final String chromeDriver;
+    private final int timeout;
+    private final String email;
+    private final String password;
+    private final String homepageUrl;
 
     public ConfigObjectProvider() {
 
@@ -26,6 +27,7 @@ public class ConfigObjectProvider {
         this.browserWidth = cfgRun.browserWidth();
         this.browserHeight = cfgRun.browserHeight();
         this.seleniumVer = cfgRun.seleniumVer();
+        this. chromeDriver = cfgRun.chromeDriver();
         this.timeout = cfgRun.timeout();
         this.email = cfgRun.email();
         this.password = cfgRun.password();
@@ -38,6 +40,7 @@ public class ConfigObjectProvider {
                 + "\nbrowserWidth: " + browserWidth
                 + "\nbrowserHeight: " + browserHeight
                 + "\nseleniumVer: " + seleniumVer
+                +"\nchromeDriver: " + chromeDriver
                 + "\ntimeout: " + timeout
                 + "\nemail: " + email
                 + "\npassword: " + password

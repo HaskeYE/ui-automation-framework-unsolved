@@ -20,6 +20,9 @@ public interface RunConfiguration extends Config {
     @Key("selenium.version")
     String  seleniumVer();
 
+    @Key("chromedriver.version")
+    String chromeDriver();
+
     @Key("timeout.settings")
     int timeout();
 
